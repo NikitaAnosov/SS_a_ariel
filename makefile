@@ -17,7 +17,7 @@ loops: libclassloops.a
 libclassloops.a: advancedClassificationLoop.o basicClassification.o
 	$(AR) -rcs libclassloops.a advancedClassificationLoop.o basicClassification.o
 #-------------------------LIB------------REC------------a------#
-‫‪recursives: libclassrec.a
+recursives: libclassrec.a
 libclassrec.a: advancedClassificationRecursion.o basicClassification.o
 	$(AR) -rcs libclassrec.a advancedClassificationRecursion.o basicClassification.o
 #-------------------------LIB------------REC------------so-----#
