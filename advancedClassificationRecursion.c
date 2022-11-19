@@ -24,15 +24,10 @@ int isPalindrome(int x)
 // will weturn if a number is Armstrong number
 int checkArm(int x, int sum)
 {
-   static int unite, size=0;
-    if (x > 0)
-    {
-        unite = x % 10;
-        size = pow(unite, sum) + size;
-        checkArm(x / 10, sum);
-        return size; /// size = x
-    }
-    else return 0;
+    if(x == 0) return 0;
+    int unite = x % 10;
+    int size = pow(unite, sum);
+    return size + checkArm(x / 10, sum);
 }
 int isArmstrong(int x)
 {
